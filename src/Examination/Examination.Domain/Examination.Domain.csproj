@@ -4,4 +4,17 @@
         <TargetFramework>net5.0</TargetFramework>
     </PropertyGroup>
 
+    <ItemGroup>
+      <PackageReference Include="MediatR" Version="9.0.0" />
+      <PackageReference Include="MongoDB.Bson" Version="2.13.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="AggregateModels\CategoryAggregate\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\BuildingBlocks\Examination.Dtos\Examination.Dtos.csproj" />
+    </ItemGroup>
+
 </Project>
