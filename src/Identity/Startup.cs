@@ -28,7 +28,7 @@ namespace Identity.API
         public void ConfigureServices(IServiceCollection services)
         {
             string migrationsAssembly = typeof(Startup).GetTypeInfo().Assembly.GetName().Name;
-            string connectionString = Configuration.GetConnectionString("DefaultConnection");
+            string connectionString = Configuration.GetConnectionString("JWExamConnection");
             
             services.AddControllers();
             services.AddDbContext<ApplicationDbContext>(options =>

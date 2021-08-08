@@ -10,10 +10,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="AggregateModels\CategoryAggregate\" />
-    </ItemGroup>
-
-    <ItemGroup>
       <ProjectReference Include="..\..\BuildingBlocks\Examination.Dtos\Examination.Dtos.csproj" />
     </ItemGroup>
 
