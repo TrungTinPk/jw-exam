@@ -96,7 +96,7 @@ namespace Examination.API
                             TokenUrl = new Uri($"{Configuration.GetValue<string>("IdentityUrl")}/connect/token"),
                             Scopes = new Dictionary<string, string>()
                             {
-                                {"full_access", "Full Access"},
+                                {"jw_exam_api", "jw_exam_api"},
                             }
                         }
                     }
@@ -117,7 +117,7 @@ namespace Examination.API
             {
                 options.Authority = identityUrl;
                 options.RequireHttpsMetadata = false;
-                options.Audience = "exam_api";
+                options.Audience = "jw_exam_api";
                 options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters()
                 {
                     ValidateIssuerSigningKey = true,
