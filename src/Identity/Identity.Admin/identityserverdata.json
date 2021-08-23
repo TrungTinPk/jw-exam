@@ -86,6 +86,7 @@
         "ClientName": "Identity Admin",
         "ClientUri": "https://localhost:6003",
         "AllowedGrantTypes": [ "authorization_code" ],
+        "AllowAccessTokensViaBrowser": true,
         "RequirePkce": true,
         "ClientSecrets": [
           {
@@ -105,6 +106,7 @@
         "ClientName": "Exam Web App Client",
         "ClientUri": "https://localhost:6002",
         "AllowedGrantTypes": [ "authorization_code" ],
+        "AllowAccessTokensViaBrowser": true,
         "RequirePkce": true,
         "ClientSecrets": [
           {
@@ -123,7 +125,9 @@
         "ClientId": "jw_exam_web_admin",
         "ClientName": "Exam Web Admin Client",
         "ClientUri": "https://localhost:6001",
-        "AllowedGrantTypes": [ "authorization_code" ],
+        "AllowedGrantTypes": [ "password" ],
+        "AllowAccessTokensViaBrowser": true,
+        "AllowOfflineAccess": true,
         "RequirePkce": true,
         "ClientSecrets": [
           {
@@ -136,12 +140,13 @@
           "https://localhost:6001/signout-callback-oidc"
         ],
         "AllowedCorsOrigins": [ "https://localhost:6001" ],
-        "AllowedScopes": [ "openid", "email", "profile", "roles" ]
+        "AllowedScopes": [ "openid", "email", "profile", "roles", "offline_access" ]
       },
       {
         "ClientId": "jw_exam_api_swaggerui",
         "ClientName": "Exam API Swagger UI",
-        "AllowedGrantTypes": [ "authorization_code" ],
+        "AllowedGrantTypes": [ "implicit" ],
+        "AllowAccessTokensViaBrowser": true,
         "RequireClientSecret": false,
         "RequirePkce": true,
         "RedirectUris": [ "https://localhost:5002/swagger/oauth2-redirect.html" ],

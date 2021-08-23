@@ -29,6 +29,61 @@ GO
 ## Packages References
 - https://github.com/serilog/serilog/wiki/Getting-Started
 - https://github.com/IdentityServer/IdentityServer4.Quickstart.UI
+- https://mudblazor.com/
+- https://github.com/Garderoben/MudBlazor.Templates
+
+## Install Environment
+- https://dotnet.microsoft.com/download/dotnet/3.1
+- https://dotnet.microsoft.com/download/dotnet/5.0
+- https://visualstudio.microsoft.com/
+- https://www.youtube.com/watch?v=fjadnDlo0RA
+- https://www.microsoft.com/en-us/sql-server/sql-server-downloads
+- https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/
+- https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15
+- https://robomongo.org/
+
+# Local secret
+
+## Exam API
+
+{
+  "DatabaseSettings": {
+    "Server": "localhost:27017",
+    "DatabaseName": "ExamDb",
+    "User": "admin",
+    "Password": "Admin%40123%24"
+  },
+  "IdentityUrl": "https://localhost:5001"
+}
+
+## Identity.Admin
+{
+  "ConnectionStrings": {
+    "ConfigurationDbConnection": "Server=.;Database=IdentityDb;Trusted_Connection=True;MultipleActiveResultSets=true",
+    "PersistedGrantDbConnection": "Server=.;Database=IdentityDb;Trusted_Connection=True;MultipleActiveResultSets=true",
+    "IdentityDbConnection": "Server=.;Database=IdentityDb;Trusted_Connection=True;MultipleActiveResultSets=true",
+    "AdminLogDbConnection": "Server=.;Database=IdentityDb;Trusted_Connection=True;MultipleActiveResultSets=true",
+    "AdminAuditLogDbConnection": "Server=.;Database=IdentityDb;Trusted_Connection=True;MultipleActiveResultSets=true",
+    "DataProtectionDbConnection": "Server=.;Database=IdentityDb;Trusted_Connection=True;MultipleActiveResultSets=true"
+  },
+  "AdminConfiguration": {
+    "IdentityAdminRedirectUri": "https://localhost:6003/signin-oidc",
+    "IdentityServerBaseUrl": "https://localhost:5001",
+  }
+}
+
+## Identity.STS
+{
+  "ConnectionStrings": {
+    "ConfigurationDbConnection": "Server=.;Database=IdentityDb;Trusted_Connection=True;MultipleActiveResultSets=true",
+    "PersistedGrantDbConnection": "Server=.;Database=IdentityDb;Trusted_Connection=True;MultipleActiveResultSets=true",
+    "IdentityDbConnection": "Server=.;Database=IdentityDb;Trusted_Connection=True;MultipleActiveResultSets=true",
+    "DataProtectionDbConnection": "Server=.;Database=IdentityDb;Trusted_Connection=True;MultipleActiveResultSets=true"
+  },
+  "AdminConfiguration": {
+    "IdentityAdminBaseUrl": "https://localhost:6003",
+  }
+}
 
 ## References URLS
 - https://samwalpole.com/using-scoped-services-inside-singletons
