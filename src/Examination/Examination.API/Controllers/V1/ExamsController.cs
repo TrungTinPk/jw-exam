@@ -1,10 +1,10 @@
 ﻿using System.Threading.Tasks;
-using Examination.Application.Queries;
+using Examination.Application.Queries.V1.Exams.GetHomeExamList;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace Examination.API.Controllers
+namespace Examination.API.Controllers.V1
 {
     [Route("api/v{version:apiVersion}/[controller]")]
     [ApiController]

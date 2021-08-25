@@ -29,22 +29,20 @@ namespace AdminApp.Services
             ILogger<AuthService> logger,
             ISessionStorageService localStorage,
             AuthenticationStateProvider authenticationStateProvider,
-            IConfiguration configuration
-        )
+            IConfiguration configuration)
         {
             _httpClient = httpClient;
             _sessionStorage = localStorage;
             _logger = logger;
             _configuration = configuration;
             _authenticationStateProvider = authenticationStateProvider;
-        }
 
-        public async Task<TokenResponse> Login(LoginRequest loginRequest)
+        }
+        public async Task<TokenResponse> LoginAsync(LoginRequest loginRequest)
         {
             _disco = await HttpClientDiscoveryExtensions.GetDiscoveryDocumentAsync(
-                _httpClient,
-                _configuration["IdentityServerConfig:IdentityServerUrl"]
-            );
+               _httpClient,
+               _configuration["IdentityServerConfig:IdentityServerUrl"]);
 
             if (_disco.IsError)
             {
@@ -62,13 +60,6 @@ namespace AdminApp.Services
             return token;
         }
 
-        public async Task Logout()
-        {
-            await _sessionStorage.RemoveItemAsync(KeyConstants.AccessToken);
-            await _sessionStorage.RemoveItemAsync(KeyConstants.RefreshToken);
-            ((ApiAuthenticationStateProvider)_authenticationStateProvider).MarkUserAsLoggedOut();
-            _httpClient.DefaultRequestHeaders.Authorization = null;
-        }
 
         private async Task<TokenResponse> RequestTokenAsync(string user, string password)
         {
@@ -86,6 +77,14 @@ namespace AdminApp.Services
             });
 
             return response;
+        }
+
+        public async Task LogoutAsync()
+        {
+            await _sessionStorage.RemoveItemAsync(KeyConstants.AccessToken);
+            await _sessionStorage.RemoveItemAsync(KeyConstants.RefreshToken);
+            ((ApiAuthenticationStateProvider)_authenticationStateProvider).MarkUserAsLoggedOut();
+            _httpClient.DefaultRequestHeaders.Authorization = null;
         }
     }
 }
