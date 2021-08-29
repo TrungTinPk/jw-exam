@@ -9,13 +9,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{C3DCD04D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examination", "Examination", "{FEE55B4D-A118-44A6-B152-77352FE0ED96}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Examination.API", "src\Examination\Examination.API\Examination.API.csproj", "{3B8C1C52-FB2D-4EC0-94EC-E00D0505C061}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Examination.API", "src\Services\Examination\Examination.API\Examination.API.csproj", "{3B8C1C52-FB2D-4EC0-94EC-E00D0505C061}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Examination.Application", "src\Examination\Examination.Application\Examination.Application.csproj", "{F102E478-E4A1-4406-9B76-342F4E4CCFF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Examination.Application", "src\Services\Examination\Examination.Application\Examination.Application.csproj", "{F102E478-E4A1-4406-9B76-342F4E4CCFF9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Examination.Domain", "src\Examination\Examination.Domain\Examination.Domain.csproj", "{4CAFD956-8244-487B-9543-62152EFFA73A}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Examination.Infrastructure", "src\Examination\Examination.Infrastructure\Examination.Infrastructure.csproj", "{1E5892C4-1815-46B0-ACA7-08CDA0AB7C63}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Examination.Domain", "src\Services\Examination\Examination.Domain\Examination.Domain.csproj", "{4CAFD956-8244-487B-9543-62152EFFA73A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examination", "Examination", "{33D43CA4-2E8C-4A62-B68F-A04A7E8746CE}"
 EndProject
@@ -35,47 +33,49 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Identity", "Identity", "{F8
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{94FD99E9-1C15-4BBB-A9B7-295FA0394164}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Examination.Dtos", "src\BuildingBlocks\Examination.Dtos\Examination.Dtos.csproj", "{ADB5EBE7-35D0-44C3-A037-FA39964F03BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Examination.Shared", "src\BuildingBlocks\Examination.Shared\Examination.Shared.csproj", "{ADB5EBE7-35D0-44C3-A037-FA39964F03BA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.Admin", "src\Identity\Identity.Admin\Identity.Admin.csproj", "{1BE28BDC-B440-4513-8810-E5E1AEFD360F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.Admin", "src\Services\Identity\Identity.Admin\Identity.Admin.csproj", "{1BE28BDC-B440-4513-8810-E5E1AEFD360F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.Admin.Api", "src\Identity\Identity.Admin.Api\Identity.Admin.Api.csproj", "{E3B2B017-DB27-4A72-A0F4-A4E67163D577}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.Admin.Api", "src\Services\Identity\Identity.Admin.Api\Identity.Admin.Api.csproj", "{E3B2B017-DB27-4A72-A0F4-A4E67163D577}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.Admin.BusinessLogic", "src\Identity\Identity.Admin.BusinessLogic\Identity.Admin.BusinessLogic.csproj", "{B37DC200-FC71-4FBD-9130-6123E8E02101}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.Admin.BusinessLogic", "src\Services\Identity\Identity.Admin.BusinessLogic\Identity.Admin.BusinessLogic.csproj", "{B37DC200-FC71-4FBD-9130-6123E8E02101}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.Admin.BusinessLogic.Identity", "src\Identity\Identity.Admin.BusinessLogic.Identity\Identity.Admin.BusinessLogic.Identity.csproj", "{DCCBF0B5-E121-4DF6-80AA-D9D2E95A8F5D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.Admin.BusinessLogic.Identity", "src\Services\Identity\Identity.Admin.BusinessLogic.Identity\Identity.Admin.BusinessLogic.Identity.csproj", "{DCCBF0B5-E121-4DF6-80AA-D9D2E95A8F5D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.Admin.BusinessLogic.Shared", "src\Identity\Identity.Admin.BusinessLogic.Shared\Identity.Admin.BusinessLogic.Shared.csproj", "{700EB18A-B901-4440-969D-5555796E3E7F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.Admin.BusinessLogic.Shared", "src\Services\Identity\Identity.Admin.BusinessLogic.Shared\Identity.Admin.BusinessLogic.Shared.csproj", "{700EB18A-B901-4440-969D-5555796E3E7F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.Admin.EntityFramework", "src\Identity\Identity.Admin.EntityFramework\Identity.Admin.EntityFramework.csproj", "{21930748-1C1F-4629-8221-CE3B95A8FC4D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.Admin.EntityFramework", "src\Services\Identity\Identity.Admin.EntityFramework\Identity.Admin.EntityFramework.csproj", "{21930748-1C1F-4629-8221-CE3B95A8FC4D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.Admin.EntityFramework.Configuration", "src\Identity\Identity.Admin.EntityFramework.Configuration\Identity.Admin.EntityFramework.Configuration.csproj", "{D60AC794-273D-4AAB-9595-75BA7AF8D5BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.Admin.EntityFramework.Configuration", "src\Services\Identity\Identity.Admin.EntityFramework.Configuration\Identity.Admin.EntityFramework.Configuration.csproj", "{D60AC794-273D-4AAB-9595-75BA7AF8D5BE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.EntityFramework.Extensions", "src\Identity\Identity.Admin.EntityFramework.Extensions\Identity.EntityFramework.Extensions.csproj", "{F1D77206-4462-4A32-A50E-0552F63CA33F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.EntityFramework.Extensions", "src\Services\Identity\Identity.Admin.EntityFramework.Extensions\Identity.EntityFramework.Extensions.csproj", "{F1D77206-4462-4A32-A50E-0552F63CA33F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.Admin.EntityFramework.Identity", "src\Identity\Identity.Admin.EntityFramework.Identity\Identity.Admin.EntityFramework.Identity.csproj", "{DAAA69BF-B8C2-4FAF-8411-A686DB160E62}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.Admin.EntityFramework.Identity", "src\Services\Identity\Identity.Admin.EntityFramework.Identity\Identity.Admin.EntityFramework.Identity.csproj", "{DAAA69BF-B8C2-4FAF-8411-A686DB160E62}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.Admin.EntityFramework.Shared", "src\Identity\Identity.Admin.EntityFramework.Shared\Identity.Admin.EntityFramework.Shared.csproj", "{C16A2664-B855-4B8C-B9BB-03BC00A1AE09}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.Admin.EntityFramework.Shared", "src\Services\Identity\Identity.Admin.EntityFramework.Shared\Identity.Admin.EntityFramework.Shared.csproj", "{C16A2664-B855-4B8C-B9BB-03BC00A1AE09}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.Admin.EntityFramework.SqlServer", "src\Identity\Identity.Admin.EntityFramework.SqlServer\Identity.Admin.EntityFramework.SqlServer.csproj", "{691BC7FD-AB16-49B2-A2A6-152035B22DE1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.Admin.EntityFramework.SqlServer", "src\Services\Identity\Identity.Admin.EntityFramework.SqlServer\Identity.Admin.EntityFramework.SqlServer.csproj", "{691BC7FD-AB16-49B2-A2A6-152035B22DE1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.Admin.UI", "src\Identity\Identity.Admin.UI\Identity.Admin.UI.csproj", "{E8378E55-DE28-4426-BFCB-7E0660F0C757}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.Admin.UI", "src\Services\Identity\Identity.Admin.UI\Identity.Admin.UI.csproj", "{E8378E55-DE28-4426-BFCB-7E0660F0C757}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.Shared", "src\Identity\Identity.Shared\Identity.Shared.csproj", "{5FF8D57A-B6B5-4C76-BD73-E0C6F9BC7760}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.Shared", "src\Services\Identity\Identity.Shared\Identity.Shared.csproj", "{5FF8D57A-B6B5-4C76-BD73-E0C6F9BC7760}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.Shared.Configuration", "src\Identity\Identity.Shared.Configuration\Identity.Shared.Configuration.csproj", "{489DE88A-C105-427E-AAD9-7375B5BA9A83}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.Shared.Configuration", "src\Services\Identity\Identity.Shared.Configuration\Identity.Shared.Configuration.csproj", "{489DE88A-C105-427E-AAD9-7375B5BA9A83}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.STS.Identity", "src\Identity\Identity.STS.Identity\Identity.STS.Identity.csproj", "{0257ADFE-5929-4B2F-9966-7D7F0AE5C6DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.STS.Identity", "src\Services\Identity\Identity.STS.Identity\Identity.STS.Identity.csproj", "{0257ADFE-5929-4B2F-9966-7D7F0AE5C6DE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.Admin.EntityFramework.MySql", "src\Identity\Identity.Admin.EntityFramework.MySql\Identity.Admin.EntityFramework.MySql.csproj", "{63A0FF18-E053-4B93-8E27-0C7B8B718E65}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.Admin.EntityFramework.MySql", "src\Services\Identity\Identity.Admin.EntityFramework.MySql\Identity.Admin.EntityFramework.MySql.csproj", "{63A0FF18-E053-4B93-8E27-0C7B8B718E65}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.Admin.EntityFramework.PostgreSQL", "src\Identity\Identity.Admin.EntityFramework.PostgreSQL\Identity.Admin.EntityFramework.PostgreSQL.csproj", "{B1B41E9E-BD1C-4CDD-A9B9-76398F8CC8FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.Admin.EntityFramework.PostgreSQL", "src\Services\Identity\Identity.Admin.EntityFramework.PostgreSQL\Identity.Admin.EntityFramework.PostgreSQL.csproj", "{B1B41E9E-BD1C-4CDD-A9B9-76398F8CC8FB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{6CAF4EB8-057F-4324-8D8C-31F88FC3DEF7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApps", "WebApps", "{CD0A5B7B-4269-423D-B1EF-93AEA815F970}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdminApp", "src\WebApps\AdminApp\AdminApp.csproj", "{DFCD1BAC-5ABB-4FE7-B3BC-88F35BC9AEAF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Examination.Infrastructure.MongoDb", "src\Services\Examination\Examination.Infrastructure.MongoDb\Examination.Infrastructure.MongoDb.csproj", "{E302DBA6-4C95-4442-89E1-0ADE211BA4C9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -95,10 +95,6 @@ Global
 		{4CAFD956-8244-487B-9543-62152EFFA73A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CAFD956-8244-487B-9543-62152EFFA73A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CAFD956-8244-487B-9543-62152EFFA73A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1E5892C4-1815-46B0-ACA7-08CDA0AB7C63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1E5892C4-1815-46B0-ACA7-08CDA0AB7C63}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1E5892C4-1815-46B0-ACA7-08CDA0AB7C63}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1E5892C4-1815-46B0-ACA7-08CDA0AB7C63}.Release|Any CPU.Build.0 = Release|Any CPU
 		{EB709DF4-856B-4EC7-937E-0F0C40A899D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EB709DF4-856B-4EC7-937E-0F0C40A899D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB709DF4-856B-4EC7-937E-0F0C40A899D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -195,6 +191,10 @@ Global
 		{DFCD1BAC-5ABB-4FE7-B3BC-88F35BC9AEAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DFCD1BAC-5ABB-4FE7-B3BC-88F35BC9AEAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DFCD1BAC-5ABB-4FE7-B3BC-88F35BC9AEAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E302DBA6-4C95-4442-89E1-0ADE211BA4C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E302DBA6-4C95-4442-89E1-0ADE211BA4C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E302DBA6-4C95-4442-89E1-0ADE211BA4C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E302DBA6-4C95-4442-89E1-0ADE211BA4C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -204,7 +204,6 @@ Global
 		{3B8C1C52-FB2D-4EC0-94EC-E00D0505C061} = {FEE55B4D-A118-44A6-B152-77352FE0ED96}
 		{F102E478-E4A1-4406-9B76-342F4E4CCFF9} = {FEE55B4D-A118-44A6-B152-77352FE0ED96}
 		{4CAFD956-8244-487B-9543-62152EFFA73A} = {FEE55B4D-A118-44A6-B152-77352FE0ED96}
-		{1E5892C4-1815-46B0-ACA7-08CDA0AB7C63} = {FEE55B4D-A118-44A6-B152-77352FE0ED96}
 		{33D43CA4-2E8C-4A62-B68F-A04A7E8746CE} = {C3DCD04D-75F2-456A-AF87-BC73A06AE698}
 		{EB709DF4-856B-4EC7-937E-0F0C40A899D1} = {33D43CA4-2E8C-4A62-B68F-A04A7E8746CE}
 		{CD6B6FF9-5D80-47C2-B960-2372EF397354} = {33D43CA4-2E8C-4A62-B68F-A04A7E8746CE}
@@ -235,6 +234,7 @@ Global
 		{6CAF4EB8-057F-4324-8D8C-31F88FC3DEF7} = {83083294-80EE-4BF1-A922-E49DABF6E757}
 		{CD0A5B7B-4269-423D-B1EF-93AEA815F970} = {83083294-80EE-4BF1-A922-E49DABF6E757}
 		{DFCD1BAC-5ABB-4FE7-B3BC-88F35BC9AEAF} = {CD0A5B7B-4269-423D-B1EF-93AEA815F970}
+		{E302DBA6-4C95-4442-89E1-0ADE211BA4C9} = {FEE55B4D-A118-44A6-B152-77352FE0ED96}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {78F7588A-D846-49E4-A9BB-B427AF73DE8A}
